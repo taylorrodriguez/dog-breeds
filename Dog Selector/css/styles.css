@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: lightblue;
+  display: grid;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+.breed-list {
+  width: 200px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+label[for="breeds"] {
+  padding: 0px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 40px;
+  }
+  label[for="breeds"],
+  .card {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    font-size: 50px;
+  }
+  label[for="breeds"],
+  .card {
+    font-size: 30px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 60px;
+  }
+  label[for="breeds"],
+  .card {
+    font-size: 40px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    font-size: 70px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    font-size: 80px;
+  }
+}
