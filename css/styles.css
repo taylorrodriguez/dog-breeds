@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+  display: grid;
+  background-color: rgb(249, 255, 160);
+}
+disable-dbl-tap-zoom {
+  touch-action: none;
+}
+header {
+  color: rgb(29, 11, 0);
+  background-color: rgb(193, 197, 193);
+}
+img {
+  max-height: 350px;
+  max-width: 350px;
+  min-height: 300px;
+  min-width: 300px;
+  margin-top: 80px;
+}
+p {
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 14vw;
+  padding: 0px;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.card{
+  background-color: rgb(249, 255, 160);
+}
+
+.breed-list {
+  width: 200px;
+  padding: 5px;
+  margin: 20px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+label[for="breeds"] {
+  font-size: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+
+@media only screen and (min-width: 500px) {
+  .logo {
+    font-size: 55px;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  label[for="breeds"],
+  .card {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .breed-list {
+    width: 200px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+  img {
+    max-height: 350px;
+    max-width: 350px;
+    min-height: 300px;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .card {
+    justify-content: center;
+    width: 100%;
+  }
+  header {
+    height: 100vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+  header {
+    width: 30%;
+  }
+  img {
+    max-height: 500px;
+    max-width: 500px;
+    min-height: 450px;
+    min-width: 450px;
+    margin-top: 100px;
+  }
+}
