@@ -1,79 +1,120 @@
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  background-color: lightblue;
+  font-weight: bolder;
   display: grid;
+  background-color: rgb(249, 255, 160);
+}
+disable-dbl-tap-zoom {
+  touch-action: none;
+}
+header {
+  color: rgb(29, 11, 0);
+  background-color: rgb(193, 197, 193);
+}
+img {
+  max-height: 350px;
+  max-width: 350px;
+  min-height: 300px;
+  min-width: 300px;
+  margin-top: 80px;
+}
+p {
+  font-size: 20px;
 }
 
+.logo {
+  font-size: 14vw;
+  padding: 0px;
+}
 .grid-item {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: lightblue;
-  padding: 15px;
+  text-align: center;
+}
+.card {
+  background-color: rgb(249, 255, 160);
 }
 
 .breed-list {
   width: 200px;
   padding: 5px;
+  margin: 20px;
   font-size: 20px;
   background-color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 label[for="breeds"] {
+  font-size: 30px;
   padding: 0px;
+  margin: 0px;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 500px and up) */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 500px) {
   .logo {
-    font-size: 40px;
-  }
-  label[for="breeds"],
-  .card {
-    font-size: 20px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-
-@media only screen and (min-width: 600px) {
-  .logo {
-    font-size: 50px;
+    font-size: 55px;
+    padding: 0;
+    margin-bottom: 5px;
   }
   label[for="breeds"],
   .card {
     font-size: 30px;
+    margin: 10px;
+  }
+  .breed-list {
+    width: 200px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+  img {
+    max-height: 350px;
+    max-width: 350px;
+    min-height: 300px;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-  .logo {
-    font-size: 60px;
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
-  label[for="breeds"],
   .card {
-    font-size: 40px;
+    justify-content: center;
+    width: 100%;
   }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {
-  .logo {
-    font-size: 70px;
+  header {
+    height: 100vh;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
-  .logo {
-    font-size: 80px;
+  header {
+    width: 30%;
+  }
+  img {
+    max-height: 500px;
+    max-width: 500px;
+    min-height: 450px;
+    min-width: 450px;
+    margin-top: 100px;
   }
 }
